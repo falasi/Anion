@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'org.anion'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.amazon.ion:ion-java:1.10.5'
+    implementation 'net.portswigger.burp.extensions:montoya-api:2023.3'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+}
+
+test {
+    useJUnitPlatform()
+}
